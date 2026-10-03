@@ -7,6 +7,9 @@ set -Eeuo pipefail
 # Safe re-run • Config preservation • Backups • Validation • Systemd • Health
 # ============================================================================
 
+
+REPO="${SVM_REPO:-https://github.com/AnkitKing7/Svm-v11.2-bot.git}"
+BRANCH="${SVM_BRANCH:-main}"
 APP_DIR="${SVM_DIR:-/opt/svm}"
 SERVICE="${SVM_SERVICE:-svm}"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
